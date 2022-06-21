@@ -1,0 +1,125 @@
+.container {
+    background-color: #28293e;
+    height: 400px;
+
+    @media(max-width: 1440px) {
+        width: 102.85rem;
+    }
+
+    @media(max-width: 1250px) {
+        width: 100%;
+    }
+
+    @media(max-width: 1040px) {
+        width: 100%;
+    }
+
+    @media(max-width: 700px) {
+        width: 100%;
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    padding: 16px 0 0 136px;
+
+    @media(max-width: 1440px) {
+        margin-right: 120rem;
+    }
+
+    @media(max-width: 1040px) {
+        margin-left: 28%;
+    }
+
+    @media(max-width: 700px) {
+        margin-left: 20%;
+    }
+}
+
+.img {
+    width: 136px;
+    height: 43px;
+}
+
+.nav {
+    display: flex;
+    margin: 0 15%;
+    padding: 22px 0 0 184px;
+    color: #fff;
+
+    @media(max-width: 1250px) {
+        margin-left: -5rem;
+    }
+
+    @media(max-width: 1130px) {
+        margin-left: -10rem;
+    }
+
+    @media(max-width: 1040px) {
+        display: none;
+    }
+}
+
+.text {
+    font-size: 16px;
+    margin-right: 100px;
+}
+
+.button {
+    width: 138px;
+    height: 48px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin: -20px 0 0 85px;
+    color: #fff;
+
+    @media(max-width: 1250px) {
+        margin: -20px 0 0 0;
+    }
+}
+
+.main {
+    margin: 93px 0 0 40%;
+    padding-bottom: 34px;
+}
+
+.portfolio {
+    font-size: 74px;
+    font-weight: 400;
+    color: #fff;
+
+    @media(max-width: 1040px) {
+        margin-left: -14%;
+    }
+
+    @media(max-width: 700px) {
+        margin-left: -20%;
+    }
+}
+
+.maintext {
+    font-weight: 600;
+    margin: 0 34%;
+    text-align: center;
+    line-height: 2rem;
+    width: 576px;
+    color: #707070;
+
+    @media(max-width: 1250px) {
+        margin: 0 30%;
+    }
+
+    @media(max-width: 1040px) {
+        margin: 0 20%;
+    }
+
+    @media(max-width: 700px) {
+        margin-left: 10%;
+    }
+
+    @media(max-width: 700px) {
+        margin-left: 25%;
+        width: 350px;
+    }
+}
