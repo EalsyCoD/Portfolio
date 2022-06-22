@@ -12,10 +12,10 @@ const LoadMore = () => {
     const isLimit = useSelector((state: RootState) => state.filter.limit)
     return (
         <div className={styles.container}>
-            <option defaultValue={isLimit} onClick={() => {
+            <button defaultValue={isLimit} onClick={() => {
                 dispatch(setFilterLimit(18))
             }} className={styles.button}>LOAD MORE
-            </option>
+            </button>
         </div>
     )
 }

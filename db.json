@@ -4,6 +4,7 @@
       "id": 1,
       "name": "SOFA",
       "filter": "Design",
+      "status": "NotSelected",
       "icon": {
         "url": "images/1.png"
       }
@@ -12,6 +13,7 @@
       "id": 2,
       "name": "Keyboard",
       "filter": "Branding",
+      "status": "NotSelected",
       "icon": {
         "url": "images/2.png"
       }
@@ -20,6 +22,7 @@
       "id": 3,
       "name": "Work Media",
       "filter": "Illustration",
+      "status": "NotSelected",
       "icon": {
         "url": "images/3.png"
       }
@@ -28,6 +31,7 @@
       "id": 4,
       "name": "DDDone",
       "filter": "Motion",
+      "status": "NotSelected",
       "icon": {
         "url": "images/4.png"
       }
@@ -36,6 +40,7 @@
       "id": 5,
       "name": "Abstract",
       "filter": "Design",
+      "status": "NotSelected",
       "icon": {
         "url": "images/5.png"
       }
@@ -44,6 +49,7 @@
       "id": 6,
       "name": "HandP",
       "filter": "Branding",
+      "status": "NotSelected",
       "icon": {
         "url": "images/6.png"
       }
@@ -52,6 +58,7 @@
       "id": 7,
       "name": "Architect",
       "filter": "Motion",
+      "status": "NotSelected",
       "icon": {
         "url": "images/7.png"
       }
@@ -60,6 +67,7 @@
       "id": 8,
       "name": "CalC",
       "filter": "Design",
+      "status": "NotSelected",
       "icon": {
         "url": "images/8.png"
       }
@@ -68,6 +76,7 @@
       "id": 9,
       "name": "Sport",
       "filter": "Branding",
+      "status": "NotSelected",
       "icon": {
         "url": "images/9.png"
       }
@@ -76,6 +85,7 @@
       "id": 10,
       "name": "Sport2",
       "filter": "Branding",
+      "status": "NotSelected",
       "icon": {
         "url": "images/10.png"
       }
@@ -84,6 +94,7 @@
       "id": 11,
       "name": "CalC2",
       "filter": "Motion",
+      "status": "NotSelected",
       "icon": {
         "url": "images/8.png"
       }
@@ -92,6 +103,7 @@
       "id": 12,
       "name": "Architect2",
       "filter": "Design",
+      "status": "NotSelected",
       "icon": {
         "url": "images/7.png"
       }
@@ -100,6 +112,7 @@
       "id": 13,
       "name": "DDon2",
       "filter": "Branding",
+      "status": "NotSelected",
       "icon": {
         "url": "images/10.png"
       }
@@ -108,6 +121,7 @@
       "id": 14,
       "name": "Hanp2",
       "filter": "Motion",
+      "status": "NotSelected",
       "icon": {
         "url": "images/8.png"
       }
@@ -116,6 +130,7 @@
       "id": 15,
       "name": "Architect2",
       "filter": "Design",
+      "status": "NotSelected",
       "icon": {
         "url": "images/7.png"
       }
@@ -124,6 +139,7 @@
       "id": 16,
       "name": "Sport2",
       "filter": "Branding",
+      "status": "NotSelected",
       "icon": {
         "url": "images/10.png"
       }
@@ -132,6 +148,7 @@
       "id": 17,
       "name": "CalC2",
       "filter": "Motion",
+      "status": "NotSelected",
       "icon": {
         "url": "images/8.png"
       }
@@ -140,6 +157,7 @@
       "id": 18,
       "name": "Architect2",
       "filter": "Design",
+      "status": "NotSelected",
       "icon": {
         "url": "images/7.png"
       }

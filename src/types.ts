@@ -10,6 +10,7 @@ export type CardsState = [{
     id: number,
     name: string,
     filter: string,
+    status: string,
     icon: Icons
 }]
 
@@ -18,6 +19,7 @@ export type ICards = {
     id: number,
     name: string,
     filter: string,
+    status: string,
     icon: Icons
 }
 

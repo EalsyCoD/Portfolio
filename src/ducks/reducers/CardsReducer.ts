@@ -5,6 +5,7 @@ const initialState: CardsState = [{
     id: 0,
     name: '',
     filter: '',
+    status: '',
     icon: {
         url: ''
     }
