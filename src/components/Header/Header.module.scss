@@ -39,6 +39,10 @@ $grey: grey;
     @media(max-width: 700px) {
         margin-left: 20%;
     }
+
+    @media(max-width: 425px) {
+        margin-left: 5%;
+    }
 }
 
 .img {
@@ -102,6 +106,10 @@ $grey: grey;
     @media(max-width: 700px) {
         margin-left: -20%;
     }
+
+    @media(max-width: 425px) {
+        margin-left: -40%;
+    }
 }
 
 .maintext {
@@ -127,5 +135,9 @@ $grey: grey;
     @media(max-width: 700px) {
         margin-left: 25%;
         width: 350px;
+    }
+
+    @media(max-width: 425px) {
+        margin-left: 10%;
     }
 }

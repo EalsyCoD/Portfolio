@@ -9,9 +9,14 @@ interface Props {
 const Item: React.FC<Props> = ({ data }) => {
     return (
         <div className={styles.itemcontainer}>
-            <p>{data.name}</p>
-            <img src={data.icon.url} alt="img"></img>
-        </div>
+            <img className={styles.img} src={data.icon.url} alt="img"></img>
+            <div className={styles.block}>
+                <p className={styles.name}>{data.name}</p>
+            </div>
+            <div className={styles.border}>
+                <p className={styles.filter}>{data.filter}</p>
+            </div>
+        </div >
     )
 }
 
