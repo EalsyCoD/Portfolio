@@ -1,5 +1,8 @@
+import { IFilterAction } from "./ducks/models/CardsActions"
+
 export interface RootState {
     card: CardsState
+    filter: FilterState
 }
 
 
@@ -19,3 +22,10 @@ export type ICards = {
 export type Icons = {
     url: string
 }
+
+
+export type FilterState = {
+    filter: string
+}
+
+export type DispatchFilterType = (args: IFilterAction) => IFilterAction

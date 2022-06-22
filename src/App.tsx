@@ -8,9 +8,7 @@ const App = (): JSX.Element => {
   const dispatch = useDispatch()
 
   React.useEffect(() => {
-    setTimeout(() => {
-      dispatch(setCards())
-    }, 0)
+    dispatch(setCards())
   }, [dispatch])
   return (
     <React.Fragment>
