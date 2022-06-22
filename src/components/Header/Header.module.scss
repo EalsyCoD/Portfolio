@@ -1,5 +1,9 @@
+$white: #fff;
+$darkblue: #28293e;
+$grey: grey;
+
 .container {
-    background-color: #28293e;
+    background-color: $darkblue;
     height: 400px;
 
     @media(max-width: 1440px) {
@@ -46,7 +50,8 @@
     display: flex;
     margin: 0 15%;
     padding: 22px 0 0 184px;
-    color: #fff;
+    color: $white;
+    cursor: pointer;
 
     @media(max-width: 1250px) {
         margin-left: -5rem;
@@ -69,10 +74,11 @@
 .button {
     width: 138px;
     height: 48px;
-    border: 1px solid grey;
+    border: 1px solid $grey;
     border-radius: 6px;
     margin: -20px 0 0 85px;
-    color: #fff;
+    color: $white;
+    cursor: pointer;
 
     @media(max-width: 1250px) {
         margin: -20px 0 0 0;
@@ -87,7 +93,7 @@
 .portfolio {
     font-size: 74px;
     font-weight: 400;
-    color: #fff;
+    color: $white;
 
     @media(max-width: 1040px) {
         margin-left: -14%;
