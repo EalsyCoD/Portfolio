@@ -2,6 +2,7 @@ import { CardsState } from '../../types'
 import { ECardsActionType, ICardsAction } from '../models/CardsActions'
 
 const initialState: CardsState = [{
+    id: 0,
     name: '',
     filter: '',
     icon: {

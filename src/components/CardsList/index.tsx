@@ -4,6 +4,7 @@ import { RootState } from 'src/types'
 import { Item } from './item'
 import styles from './CardsList.module.scss'
 import Filter from '../Filter'
+import LoadMore from '../LoadMore'
 
 
 
@@ -23,11 +24,12 @@ const CardsList = (): JSX.Element => {
                 <div className={styles.container}>
                     <Filter />
                     {cards.map((item) => (
-                        <Item key={item.name} data={item} />
+                        <Item key={item.id} data={item} />
                     ))}
+                    <LoadMore />
                 </div>
             ) : (
-                <React.Fragment></React.Fragment>
+                <React.Fragment>Загрузка!</React.Fragment>
             )}
 
         </React.Fragment>

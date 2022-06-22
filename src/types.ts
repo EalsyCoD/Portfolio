@@ -7,6 +7,7 @@ export interface RootState {
 
 
 export type CardsState = [{
+    id: number,
     name: string,
     filter: string,
     icon: Icons
@@ -14,6 +15,7 @@ export type CardsState = [{
 
 
 export type ICards = {
+    id: number,
     name: string,
     filter: string,
     icon: Icons
@@ -25,7 +27,8 @@ export type Icons = {
 
 
 export type FilterState = {
-    filter: string
+    filter?: string
+    limit?: number,
 }
 
 export type DispatchFilterType = (args: IFilterAction) => IFilterAction

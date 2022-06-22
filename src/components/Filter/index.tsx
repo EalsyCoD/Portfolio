@@ -6,6 +6,13 @@ import styles from './Filter.module.scss'
 
 
 const Filter = () => {
+    const [active, setActive] = React.useState<boolean>(false)
+    const rootClasses = [styles.filt];
+    if (active) {
+        rootClasses.push(styles.active)
+    } else {
+        rootClasses.push(styles.filt)
+    }
     const FilterState = [
         'ShowAll',
         'Design',
@@ -13,7 +20,6 @@ const Filter = () => {
         'Illustration',
         'Motion'
     ]
-    const [filter, setFilter] = React.useState('ShowAll')
     const dispatch = useDispatch()
     const isFilter = useSelector((state: RootState) => state.filter.filter)
     return (

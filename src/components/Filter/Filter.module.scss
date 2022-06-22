@@ -86,7 +86,12 @@
     font-weight: 400;
     margin-right: 50px;
 
-    &:active {
-        color: green;
+    &:focus {
+        color: red;
     }
+}
+
+.filt.active {
+    color: #16CD53;
+    font-weight: 600;
 }
