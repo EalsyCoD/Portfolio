@@ -3,6 +3,7 @@ import { IFilterAction } from "./ducks/models/CardsActions"
 export interface RootState {
     card: CardsState
     filter: FilterState
+    delete: DeleteCard
 }
 
 
@@ -15,6 +16,8 @@ export type CardsState = [{
 }]
 
 
+
+
 export type ICards = {
     id: number,
     name: string,
@@ -22,6 +25,24 @@ export type ICards = {
     status: string,
     icon: Icons
 }
+
+export type DeleteAction = {
+    type: string,
+    payload: ICards
+}
+
+export type DeleteCard = {
+    items: Delete[]
+}
+
+export type Delete = {
+    id: number | any,
+    name: string,
+    filter: string,
+    status: string,
+    icon: Icons
+}
+
 
 export type Icons = {
     url: string

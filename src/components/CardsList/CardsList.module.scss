@@ -66,6 +66,10 @@
     width: 107%;
     height: 100%;
     border: 4px solid #4FE24A;
+
+    @media(max-width: 1440px) {
+        width: 27rem;
+    }
 }
 
 

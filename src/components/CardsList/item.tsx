@@ -1,5 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { setCards } from 'src/ducks/actions/CardsAction'
+import { deleteCards } from 'src/ducks/actions/DeleteAction'
 import { setFilterMobile } from 'src/ducks/actions/FilterAction'
 import { ICards, RootState } from '../../types'
 import Filter from '../Filter'
@@ -19,10 +21,19 @@ const Item: React.FC<Props> = ({ data }) => {
             setSelected('NotSelected');
             setData(data);
         } else if (selected === 'NotSelected') {
+            document.addEventListener('keydown', onKeyPress)
             setSelected('Selected');
             setData(data);
         }
     };
+
+    const onKeyPress = (event: KeyboardEvent) => {
+        if (event.key == "Delete") {
+            dispatch(setCards())
+            dispatch(deleteCards(data.id))
+            document.removeEventListener('keydown', onKeyPress)
+        }
+    }
 
     return (
         <React.Fragment>
@@ -38,9 +49,9 @@ const Item: React.FC<Props> = ({ data }) => {
                 </div>
             ) || (
                     <React.Fragment>
-                        <div onClick={handleSelected} className={styles.itemcontainer}>
-                            <div className={styles.borderSelected}>
-                                <img className={styles.img} src={datas.icon.url} alt="img"></img>
+                        <div id="div" onClick={handleSelected} className={styles.itemcontainer}>
+                            <div id="div" className={styles.borderSelected}>
+                                <img id="div" className={styles.img} src={datas.icon.url} alt="img"></img>
                             </div>
                             <div className={styles.block}>
                                 <p className={styles.name}>{datas.name}</p>

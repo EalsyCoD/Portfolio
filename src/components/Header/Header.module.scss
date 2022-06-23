@@ -10,6 +10,10 @@ $grey: grey;
         width: 102.85rem;
     }
 
+    @media(max-width: 1386px) {
+        width: 100%;
+    }
+
     @media(max-width: 1250px) {
         width: 100%;
     }
@@ -98,6 +102,10 @@ $grey: grey;
     font-size: 74px;
     font-weight: 400;
     color: $white;
+
+    @media(max-width: 1440px) {
+        margin-left: 5%;
+    }
 
     @media(max-width: 1040px) {
         margin-left: -14%;
