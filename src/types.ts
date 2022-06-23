@@ -28,7 +28,7 @@ export type ICards = {
 
 export type DeleteAction = {
     type: string,
-    payload: ICards
+    payload: Delete
 }
 
 export type DeleteCard = {

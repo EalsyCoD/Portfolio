@@ -30,7 +30,7 @@ const setFilterLimit = (
                     limit,
                 },
             })
-        } catch (error: any) {
+        } catch (error: unknown) {
             dispatch(setCards())
         }
     }

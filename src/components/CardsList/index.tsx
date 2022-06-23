@@ -26,12 +26,12 @@ const CardsList = (): JSX.Element => {
                     {cards.map((item) => (
                         <Item key={item.id} data={item} />
                     ))}
-                    <LoadMore />
+
                 </div>
             ) : (
                 <React.Fragment>Загрузка!</React.Fragment>
             )}
-
+            <LoadMore />
         </React.Fragment>
     )
 }

@@ -1,3 +1,7 @@
+.container {
+    background-color: #FDF0E9;
+}
+
 .button {
     width: 170px;
     height: 48px;
@@ -6,31 +10,35 @@
     background-color: aqua;
     border: 1px solid #fff;
     position: relative;
-    margin-top: 5rem;
-    margin-left: 50rem;
+    margin-top: 3rem;
+    margin-left: 60rem;
     cursor: pointer;
 
     @media(max-width: 1440px) {
-        margin-left: 40rem;
+        margin-left: 48rem;
     }
 
     @media(max-width: 1250px) {
-        margin-left: 30rem;
+        margin-left: 42rem;
+    }
+
+    @media(max-width: 1130px) {
+        margin-left: 38rem;
     }
 
     @media(max-width: 1040px) {
-        margin-left: 22rem;
+        margin-left: 33rem;
     }
 
     @media(max-width: 768px) {
-        margin-left: 12rem;
+        margin-left: 22rem;
     }
 
     @media(max-width: 700px) {
-        margin-left: 9rem;
+        margin-left: 18rem;
     }
 
     @media(max-width: 425px) {
-        margin-left: 1rem;
+        margin-left: 10rem;
     }
 }
