@@ -1,6 +1,6 @@
 # Jupiter(Portfolio)
 
-![Design preview for the Users List](./design/desktop-preview.jpg)
+![Design preview for the Users List](./design/desktop-preview.png)
 
 ## Usage
 
