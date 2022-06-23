@@ -24,6 +24,10 @@
         margin: -5% 0%;
     }
 
+    @media(max-width: 657px) {
+        margin: -10% -6%;
+    }
+
     @media(max-width: 603px) {
         margin: -5% -20%;
     }
@@ -70,6 +74,10 @@
     border: 1px solid orange;
     border-radius: 0.625em;
     cursor: pointer;
+
+    @media(max-width: 657px) {
+        margin: 0% 0 0 5%;
+    }
 
     @media(max-width: 603px) {
         margin: -5% 0 0 20%;
