@@ -9,12 +9,19 @@ import styles from './LoadMore.module.scss'
 
 const LoadMore = () => {
     const dispatch = useDispatch()
-    const isLimit = useSelector((state: RootState) => state.filter.limit)
+    const isLimit = useSelector((state: RootState) => state.filter.limit) as number
+
+
+    const handleLoadMore = () => {
+        const value = isLimit + 9
+        console.log(value)
+        dispatch(setFilterLimit(value))
+        dispatch(setCards())
+    }
+
     return (
         <div className={styles.container}>
-            <button defaultValue={isLimit} onClick={() => {
-                dispatch(setFilterLimit(18))
-            }} className={styles.button}>LOAD MORE
+            <button defaultValue={isLimit} onClick={handleLoadMore} className={styles.button}>LOAD MORE
             </button>
         </div>
     )

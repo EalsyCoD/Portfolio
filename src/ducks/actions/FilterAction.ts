@@ -1,8 +1,6 @@
 import { ThunkAction } from 'redux-thunk'
-
 import { DispatchFilterType, RootState } from '../../types'
 import { ECardsActionType, TCardsActions } from '../models/CardsActions'
-import { setCards } from './CardsAction'
 
 const setFilterMobile = (
     filter: string
@@ -22,7 +20,6 @@ const setFilterLimit = (
 ): ThunkAction<void, RootState, unknown, TCardsActions> => {
     return async (dispatch, getState) => {
         try {
-            dispatch(setCards())
             dispatch({
                 type: ECardsActionType.FILTER_SET_LIMIT,
                 payload: {
@@ -31,7 +28,6 @@ const setFilterLimit = (
                 },
             })
         } catch (error: unknown) {
-            dispatch(setCards())
         }
     }
 }
