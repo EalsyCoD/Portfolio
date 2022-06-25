@@ -1,4 +1,5 @@
 .container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: #FDF0E9;
@@ -10,10 +11,12 @@
         padding-right: 135px;
     }
 
+
 }
 
 .itemcontainer {
-    margin-left: 132px;
+    width: 22%;
+    margin-left: 100px;
     margin-bottom: 32px;
     border: 4px solid transparent;
     cursor: pointer;
@@ -36,9 +39,10 @@
         margin-left: 12%;
     }
 
-    @media(max-width: 1040px) {
+    @media(max-width: 1039px) {
         margin-right: 250px;
         margin-left: 10px;
+        cursor: auto;
     }
 
     @media(max-width: 1024px) {

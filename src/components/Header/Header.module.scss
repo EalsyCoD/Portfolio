@@ -21,10 +21,6 @@ $grey: grey;
     @media(max-width: 1040px) {
         width: 100%;
     }
-
-    @media(max-width: 700px) {
-        width: 100%;
-    }
 }
 
 
@@ -100,7 +96,7 @@ $grey: grey;
 
 .portfolio {
     font-size: 74px;
-    font-weight: 400;
+    font-weight: 600;
     color: $white;
 
     @media(max-width: 1440px) {
@@ -121,12 +117,12 @@ $grey: grey;
 }
 
 .maintext {
-    font-weight: 600;
+    font-weight: 400;
     margin: 0 34%;
     text-align: center;
     line-height: 2rem;
     width: 576px;
-    color: #707070;
+    color: #FFFFFFA3;
 
     @media(max-width: 1250px) {
         margin: 0 30%;

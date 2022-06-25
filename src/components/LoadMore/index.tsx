@@ -14,7 +14,6 @@ const LoadMore = () => {
 
     const handleLoadMore = () => {
         const value = isLimit + 9
-        console.log(value)
         dispatch(setFilterLimit(value))
         dispatch(setCards())
     }
