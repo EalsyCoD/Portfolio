@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setCards } from 'src/ducks/actions/CardsAction'
-import { deleteCards } from 'src/ducks/actions/DeleteAction'
+import { deleteCards } from 'src/ducks/actions/CardsAction'
 import { setFilterMobile } from 'src/ducks/actions/FilterAction'
 import { ICards, RootState } from '../../types'
 import styles from './CardsList.module.scss'
@@ -31,7 +30,6 @@ const Item: React.FC<Props> = ({ data }) => {
 
     const deleteProjectDeleteKey = (e: React.KeyboardEvent<HTMLDivElement>) => {
         if (e.key === 'Delete') {
-            dispatch(setCards())
             projectId && dispatch(deleteCards(projectId))
         }
     }
@@ -41,7 +39,7 @@ const Item: React.FC<Props> = ({ data }) => {
         : styles.itemcontainer
     return (
         <React.Fragment>
-            <div tabIndex={0} onKeyDown={deleteProjectDeleteKey} onClick={() => changeActiveProject(data.id)} className={activeProjectStyles}>
+            <div tabIndex={0} onKeyDown={deleteProjectDeleteKey} onClick={() => changeActiveProject(data.id as number)} className={activeProjectStyles}>
                 <img className={styles.img} src={data.icon.url} alt="img"></img>
                 <div className={styles.block}>
                     <p className={styles.name}>{data.name}</p>

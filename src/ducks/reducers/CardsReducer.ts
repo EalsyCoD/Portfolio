@@ -5,7 +5,6 @@ const initialState: CardsState = [{
     id: 0,
     name: '',
     filter: '',
-    status: '',
     icon: {
         url: ''
     }
@@ -18,9 +17,14 @@ const CardsReducer = (
     switch (action.type) {
         case ECardsActionType.GET_CARDS_INFO:
             return action.payload
+        case ECardsActionType.DELETE_CARD:
+            return state.filter((item) => item.id !== action.payload)
         default:
             return state
     }
 }
+
+
+
 
 export default CardsReducer

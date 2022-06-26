@@ -24,7 +24,7 @@ const CardsList = (): JSX.Element => {
                 <div className={styles.container}>
                     <Filter />
                     {cards.map((item) => (
-                        <Item key={item.id} data={item} />
+                        <Item key={item.id as number} data={item} />
                     ))}
 
                 </div>

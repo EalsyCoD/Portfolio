@@ -1,4 +1,4 @@
-import { CardsState, Delete, FilterState } from "../../types"
+import { CardsState, FilterState } from "../../types"
 
 export enum ECardsActionType {
     GET_CARDS_INFO = 'GET-CARDS-INFO',
@@ -6,26 +6,20 @@ export enum ECardsActionType {
     FILTER_CLEAR = 'CLEAR-FILTER',
     FILTER_SET_MOBILE = 'FILTER-SET-MOBILE',
     FILTER_SET_LIMIT = 'FILTER-SET-LIMIT',
-    // DELETE_CARD = 'DELETE-CARD',
+    DELETE_CARD = 'DELETE-CARD',
 }
 
 
 export type TCardsActions =
     | ICardsAction
     | IFilterAction
-// | ICardDeleteAction
+
 
 
 export interface ICardsAction {
     type: ECardsActionType
     payload: CardsState
 }
-
-// export interface ICardDeleteAction {
-//     type: ECardsActionType
-//     payload: Delete
-// }
-
 
 export interface IFilterAction {
     type: ECardsActionType
